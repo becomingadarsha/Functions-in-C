@@ -1,0 +1,17 @@
+#include<stdio.h>
+float interest(); // return type as other data type is used instead of void
+void main() // no argument as inside data type isn't defined
+{
+	float x;
+	x=interest();
+	printf("The interest is %f",x);
+	getch();
+}
+float interest()
+{
+	int p;
+	float t,r,interest;
+	printf("Enter principle,time and rate respectively:");
+	scanf("%d%f%f",&p,&t,&r);
+	return(p*t*r/100); // return type as return is used
+}
