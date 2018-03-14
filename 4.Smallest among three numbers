@@ -1,0 +1,19 @@
+//WAP a program to find smallest of three number using function.
+#include<stdio.h>
+int small(int,int,int); //argument and return type 
+void main()
+{
+	int a,b,c,x;
+	printf("Enter value of three numbers:");
+	scanf("%d%d%d",&a,&b,&c);
+	x=small(a,b,c);
+	printf("%d is smallest",x);
+}
+int small(int a,int b,int c)
+{
+	int temp,min;
+   temp = (a < b)? a : b;
+    min =  (c < temp) ? c : temp;
+  return(min);
+}
+
