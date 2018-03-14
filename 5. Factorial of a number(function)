@@ -1,21 +1,23 @@
 #include<stdio.h>
-#include<conio.h>
-int fact(); // return type with no arguments
+long fact(int);
 void main()
 {
-	int x;
-	x= fact();
-	printf("The factorial of is %d",x);
-    getch();
+ int n;
+ long x;
+  printf("Enter any positive number:");
+ scanf("%d",&n);
+ x= fact(n);
+ printf("The factorial of is %d",x);
+   
 }
-int fact()
+long fact(int d)
 {
-	int a=1,i;
-	printf("Enter any positive number:");
-	scanf("%d",&a);
-    for(i=1;i<=a;i++)
+ long a =1;
+ int i;
+
+    for(i=1;i<=d;i++)
     {
-    	a=a*i;
-	}
-	return (a);
+     a=a*i;
+ }
+ return (a);
 }
