@@ -1,0 +1,21 @@
+#include<stdio.h>
+int rev(int);
+void main()
+{
+	int n,x;
+	printf("Enter any interger:");
+	scanf("%d",&n);
+	x=rev(n);
+	printf("The reverse of %d is %d",n,x);
+}
+int rev(int n)
+{
+	int  rev= 0, remainder;
+	 while(n != 0)
+    {
+        remainder = n%10;
+        rev = rev*10 + remainder;
+        n /= 10;
+    }
+    return (rev);
+}
