@@ -1,5 +1,5 @@
 #include<stdio.h>
-int rev(int);
+int rev(int); // argument and return type
 void main()
 {
 	int n,x;
