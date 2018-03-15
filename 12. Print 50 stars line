@@ -1,0 +1,16 @@
+#include<stdio.h>
+void star(int); //agrument but no return value
+void main()
+{
+	int x,n;
+    star(n);
+}
+void star(int n)
+{
+	int i;
+	for(i=1;i<=50;i++)
+	{
+		printf("*\t");
+	}
+	
+}
