@@ -8,7 +8,7 @@ int main()
 }
 int big()
 {
-	int i,n,j,k,a[100],larg,small;
+	int i,n,a[100],larg;
 	printf("How many numbers to be inputed?\t");
 	scanf("%d",&n);
 	printf("\nEnter elements one by one:\n");
