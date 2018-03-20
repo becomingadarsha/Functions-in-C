@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int hcf(int ,int);
+
+void main()
+{
+    int a,b;
+    printf("Enter two numbers: ");
+    scanf("%d %d",&a,&b);
+    int result = hcf(a,b);
+    printf("HCF = %d",result);
+}
+
+int hcf(int a,int b)
+{
+    if (a%b==0)
+        return b;
+    else if(a<b && a%b<0)
+        return hcf(a%b,b);
+    else
+        return hcf(b%a,a);
+}
