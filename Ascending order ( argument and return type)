@@ -1,0 +1,41 @@
+#include<stdio.h>
+int ascend(int,int []);
+void main()
+{
+	int x,a[100],n,i;
+		printf("How many numbers to be inputed?");
+		scanf("%d",&n);
+		printf("Enter number one by one:\n");
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&a[i]);
+		}
+     ascend(n,a);
+     
+     	printf("\n\nThe number in ascending order is:\n");
+		for(i=0;i<n;i++)
+		{
+			printf("%d\n",a[i]);
+		}
+}
+int ascend(int n,int a[])
+{
+	int i,j,temp;
+	
+		
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<n-i-1;j++)
+			{
+				if(a[j]>a[j+1])
+				{
+			 	    temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+					
+				}
+			}
+		}
+		return(a);
+	
+}
