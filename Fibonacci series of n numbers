@@ -1,3 +1,4 @@
+#include<stdio.h>
 int fibo(int n);//Fibonacci series using recursion
 int main(){
 	int i,num,x;
