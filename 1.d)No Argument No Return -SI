@@ -1,0 +1,16 @@
+#include<stdio.h>
+void interest(); //no argument as data type isn't defined
+void main()
+{
+	interest();
+	getch();
+}
+void interest()
+{
+	int p;
+	float t,r,interest;
+	printf("Enter principle,time and rate respectively:");
+	scanf("%d%f%f",&p,&t,&r);
+	interest=(p*t*r/100);
+	printf("The interest is %f",interest); //no return type as return isn't used
+}

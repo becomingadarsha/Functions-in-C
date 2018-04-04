@@ -1,0 +1,15 @@
+#include<stdio.h>
+float interest(int,float,float); //float if return type given
+void main()
+{
+	int p;
+	float t,r,x;
+	printf("Enter principle,time and rate respectively:");
+	scanf("%d%f%f",&p,&t,&r);
+	x=interest(p,t,r);
+	printf("The interest is %f",x);
+}
+ float interest(int p,float t,float r)
+{
+	return(p*t*r/100); //return type
+}
