@@ -1,0 +1,53 @@
+
+#include<stdio.h>
+int hcf(int,int);
+int lcm(int,int);
+
+int main()
+{
+    int a,b,x,y;
+
+    printf("Enter two numbers: \t");
+    scanf("%d %d",&a,&b);
+
+    y=lcm(a,b);
+    
+   x= hcf(a,b);
+printf("\nHCF of %d and %d is %d",a,b,x);
+
+printf("\nLCM of %d and %d is %d",a,b,y);
+
+    return 0;
+}
+//function to calculate hcf
+int hcf(int a,int b)
+{
+    int i,hcf,min;
+min = (a<b) ? a : b;
+    for(i=1; i<=min; i++)
+    {
+    	
+        /* If i is factor of both number */
+        if(a%i==0 && b%i==0)
+        {
+            hcf = i;
+        }
+    }
+  return hcf;
+}
+
+//function to calculate l.c.m
+int lcm(int a,int b)
+{
+int x;
+if(a>b)
+	x=a;
+	else
+	x=b;
+	while(x%a!=0 || x%b!=0)
+	{
+		x++;
+	}
+    return x;
+}
+
