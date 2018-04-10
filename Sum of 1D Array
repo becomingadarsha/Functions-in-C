@@ -1,0 +1,22 @@
+//PASSING 1-D ARRAY TO A FUNCTION…
+#include<stdio.h>
+#include<conio.h>
+void array_pass(int arr[]);
+int main()
+{
+	int  a[5]={1,2,3,4,5};
+	array_pass(a);
+	getch();
+	return 0;
+}
+void array_pass(int arr[])
+{
+	int j,sum=0;
+	printf("the elements of array are\n");
+	for(j=0;j<5;j++)
+	{
+		printf("%d\n",arr[j]);
+		sum=sum+arr[j];
+	}
+	printf("the sum of array elements is %d\n",sum);
+}
