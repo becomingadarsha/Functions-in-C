@@ -1,0 +1,23 @@
+#include<stdio.h>
+void array_pass(int arr[],int m);
+void main()
+{	int i,n,a[20];
+	printf("enter the size of array\n");
+	scanf("%d",&n);
+	printf("enter the array elements\n");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	array_pass(a,n);
+	getch();
+}
+void array_pass(int arr[],int m)
+{
+	int j,sum=0;
+	printf("the elements of array are\n");
+	for(j=0;j<m;j++)
+	{
+		printf("%d\n",arr[j]);
+		sum=sum+arr[j];
+	}
+	printf("the sum of array elements is %d\n",sum);
+}
