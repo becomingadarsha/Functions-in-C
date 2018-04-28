@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<math.h>
+int armstrong(int); //check Armstrong or not
+int main()
+{
+		int n,flag;
+	printf("enter any number : ");
+	scanf("%d",&n);
+	sum=armstrong(n);
+		if(flag=1)
+	{
+		printf("the number is armstrong");
+	}
+	else
+	{
+		printf("the number is not armstrong");
+	}
+}
+int armstrong(int n)
+{
+int count=0,sum=0,rem,flag;
+	while(n!=0)
+	{
+		n=n/10;
+		count++;
+	}
+	while(n!=0)
+	{
+		rem=n%10;
+		sum=sum+pow(rem,count);
+		n=n/10;
+	}
+	if(sum=n)
+	{
+		flag=1;
+	}
+	else
+	{
+		flag=0;
+	}
+return (flag);
+}

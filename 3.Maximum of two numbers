@@ -1,0 +1,21 @@
+#include<stdio.h>
+void max();         // no argument no return type
+void main()
+{
+	max();
+	getch();
+}
+void max()
+{
+	int a,b;
+	printf("Enter two numbers:");
+	scanf("%d%d",&a,&b);
+	if(a>b)
+	{
+		printf("%d is greatest",a);
+	}
+	else
+	{
+		printf("%d is greatest",b);
+	}
+}

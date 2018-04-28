@@ -1,0 +1,23 @@
+#include<stdio.h>
+long fact(int);
+void main()
+{
+ int n;
+ long x;
+  printf("Enter any positive number:");
+ scanf("%d",&n);
+ x= fact(n);
+ printf("The factorial of is %d",x);
+   
+}
+long fact(int d)
+{
+ long a =1;
+ int i;
+
+    for(i=1;i<=d;i++)
+    {
+     a=a*i;
+ }
+ return (a);
+}
