@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void array_pass(int p, int q, int arr[][q]);
+void main()
+{
+	int i,m,j,n,a[3][3];
+	printf("enter the row of array\n");
+	scanf("%d",&m);
+	printf("enter the column of array\n");
+	scanf("%d",&n);
+	printf("enter the array elements\n");
+	for(i=0;i<m;i++)
+	{
+	for(j=0;j<n;j++)
+	{
+	scanf("%d",&a[i][j]);
+	}
+	}
+	array_pass(m,n,a);
+	getch();
+}
+
+void array_pass(int p, int q, int arr[][q])
+{
+	int j,i,sum=0;
+	printf("the elements of array are\n");
+	for(i=0;i<p;i++)
+	{
+	for(j=0;j<q;j++)
+	{
+	printf("%d\t",arr[i][j]);
+	}
+	printf("\n");
+	}
+	
+}
